@@ -13,17 +13,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        Button btnChange = findViewById(R.id.btnClick);
-        final EditText etText = findViewById(R.id.etText);
-        final TextView txtChange = findViewById(R.id.txtChange);
-
-        btnChange.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                txtChange.setText(etText.getText().toString());
-            }
-        });
     }
 }
